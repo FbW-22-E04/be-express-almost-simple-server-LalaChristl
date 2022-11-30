@@ -33,19 +33,6 @@ app.get('/random', (request, response) => {
 // ("----TASK 6----");
 
 
-// let randomNumber = Math.random().toString()
-
-// app.get('/isNumber/:id', (request, response) => {
-//     const { id }= request.params;
-//     // console.log('hello from isNumber', request.params.id)
-//     // response.send({id})
-//     if (isNaN(Number(id))) {
-//         response.send("This is not a number")
-//     } else {
-//         response.send("This is a number")
-//     }
-// });
-
 app.get('/isNumber/:value', (request, response) => {
     const { value } = request.params;
 
